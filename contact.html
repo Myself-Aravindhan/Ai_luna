@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- *******  Link To CSS Style Sheet  ******* -->
+	<link rel="stylesheet" type="text/css" href="contact.css">
+
+	<!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact Section</title>
+</head>
+<body>
+	<!-- Header Section -->
+	<header class="header">
+		<div class="header-content">
+			<div class="logo">
+				<img src="/Assets/Untitled design.png" class="ai-icon ">
+				<h1>Luna</h1>
+			</div>
+			<nav class="nav-menu">
+				<a href="/index.html" class="active">Home</a>
+				<a href="https://opccgoeo.dora.run/">About us</a>
+				<a href="/templates/premium/premium.html">Premium</a>
+				<a href="/templates/contact/contact.html">Contact us</a>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Main Content -->
+	<div class="container">
+		<main class="row">
+			<!-- Feedback Section -->
+			<section class="feedback-section">
+				<h2>Give Feedback</h2>
+				<form class="feedback-form" id="feedbackForm">
+					<div class="input-group">
+						<input type="text" id="feedbackName" required="required">
+						<label>Your Name</label>
+					</div>
+					<div class="input-group">
+						<input type="email" id="feedbackEmail" required="required">
+						<label>Your Email</label>
+					</div>
+					<div class="input-group">
+						<input type="text" id="feedbackSubject" required="required">
+						<label>Subject</label>
+					</div>
+					<div class="input-group">
+						<textarea id="feedbackMessage" required="required"></textarea>
+						<label>Your Message</label>
+					</div>
+					<button type="submit" class="submit-btn">
+						<i class="fa-solid fa-paper-plane"></i>
+						Send Message
+					</button>
+				</form>
+			</section>
+			
+			<!-- Chat Section -->
+			<section class="chat-section">
+				<h2>Let's Chat</h2>
+				<p class="section-description">Get in touch with us anytime. We're here to help and answer any questions you might have.</p>
+
+				<div class="contact-info">
+					<div class="info-item">
+						<div class="icon">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="details">
+							<span class="label">Phone</span>
+							<span class="value">+00 110 111 00</span>
+						</div>
+					</div>
+
+					<div class="info-item">
+						<div class="icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="details">
+							<span class="label">Email</span>
+							<span class="value">aravindsrinivasan421@gmail.com</span>
+						</div>
+					</div>
+
+					<div class="info-item">
+						<div class="icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="details">
+							<span class="label">Location</span>
+							<span class="value">123 Digital Avenue, Tech City</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="social-links">
+					<a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer-section">
+				<h3>About ConnectHub</h3>
+				<p>We're dedicated to creating meaningful connections and providing exceptional service to our customers.</p>
+			</div>
+			<div class="footer-section">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h3>Newsletter</h3>
+				<form class="newsletter-form">
+					<input type="email" placeholder="Enter your email">
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2025 Luna. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="contact.js"></script>
+</body>
+</html>

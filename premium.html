@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberpunk Premium</title>
+    <link rel="stylesheet" href="premium.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="app" class="cyberpunk-container">
+        <div class="logo-container">
+            <img src="/Assets/Untitled design.png" alt="Luna Logo" class="luna-logo">
+            <span class="luna-text">LUNA</span>
+        </div>
+
+        <div class="header">
+            <h1 class="glitch" data-text="PREMIUM ACCESS">PREMIUM ACCESS</h1>
+            <p class="subtitle">Enter the future of digital excellence</p>
+        </div>
+
+        <div class="features-highlight">
+            <h2>Premium Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>High-Speed Access</h3>
+                    <p>Lightning-fast connection speeds with premium server access</p>
+                </div>
+                <div class="feature-card">
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock technical assistance from our cyber experts</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Exclusive Content</h3>
+                    <p>Access to premium-only digital content and special events</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Advanced Security</h3>
+                    <p>Enhanced protection with cutting-edge security protocols</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Cloud Storage</h3>
+                    <p>50GB secure cloud storage with end-to-end encryption</p>
+                </div>
+                <div class="feature-card">
+                    <h3>AI Assistant</h3>
+                    <p>Personal AI assistant for task automation and support</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h2>Daily Pass</h2>
+                <div class="price">₹99</div>
+                <ul class="features">
+                    <li>24-hour access</li>
+                    <li>Basic features</li>
+                    <li>Community access</li>
+                    <li>Standard support</li>
+                </ul>
+                <button class="subscribe-btn">Get Started</button>
+            </div>
+
+            <div class="pricing-card featured">
+                <h2>Monthly Pass</h2>
+                <div class="price">₹1499</div>
+                <div class="best-value">Best Value</div>
+                <ul class="features">
+                    <li>30-day access</li>
+                    <li>All premium features</li>
+                    <li>24/7 priority support</li>
+                    <li>Exclusive content</li>
+                    <li>Special events access</li>
+                    <li>Custom profile badge</li>
+                </ul>
+                <button class="subscribe-btn featured">Subscribe Now</button>
+            </div>
+
+            <div class="pricing-card">
+                <h2>Weekly Pass</h2>
+                <div class="price">₹499</div>
+                <ul class="features">
+                    <li>7-day access</li>
+                    <li>Premium features</li>
+                    <li>Priority support</li>
+                    <li>Extended content</li>
+                    <li>Basic events access</li>
+                </ul>
+                <button class="subscribe-btn">Get Access</button>
+            </div>
+        </div>
+
+        <div class="payment-section">
+            <h2>Payment Details</h2>
+            <div class="upi-container">
+                <div class="upi-details">
+                    <p>Account Name: <span class="neon-text">CYBER MASTER</span></p>
+                    <p>UPI ID: <span id="upiId" class="neon-text">cyberpunk@upi</span>
+                        <button onclick="copyUpiId()" class="copy-btn">Copy</button>
+                    </p>
+                    <p>GPay Number: <span id="gpayNumber" class="neon-text">+91 6384520790</span>
+                        <button onclick="copyGpayNumber()" class="copy-btn">Copy</button>
+                    </p>
+                </div>
+                <div class="qr-code">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="UPI QR Code">
+                </div>
+            </div>
+        </div>
+
+        <div id="terms" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Terms of Service</h2>
+                <div class="modal-text">
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>By accessing and using our services, you agree to be bound by these Terms of Service.</p>
+                    
+                    <h3>2. User Responsibilities</h3>
+                    <p>Users must maintain account security and comply with all applicable laws and regulations.</p>
+                    
+                    <h3>3. Service Usage</h3>
+                    <p>Our services are provided "as is" and we reserve the right to modify or discontinue them at any time.</p>
+                    
+                    <h3>4. Payment Terms</h3>
+                    <p>All payments are non-refundable unless otherwise specified by law.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="privacy" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Privacy Policy</h2>
+                <div class="modal-text">
+                    <h3>1. Data Collection</h3>
+                    <p>We collect information necessary to provide our services and improve user experience.</p>
+                    
+                    <h3>2. Data Usage</h3>
+                    <p>Your data is used to provide, maintain, and improve our services.</p>
+                    
+                    <h3>3. Data Protection</h3>
+                    <p>We implement security measures to protect your personal information.</p>
+                    
+                    <h3>4. Your Rights</h3>
+                    <p>You have the right to access, correct, or delete your personal data.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="cyberpunk-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@cyberpunk.com</p>
+                    <p>Discord: CyberPunk Community</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" onclick="openModal('terms')">Terms of Service</a></li>
+                        <li><a href="#" onclick="openModal('privacy')">Privacy Policy</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberPunk Premium. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="premium.js"></script>
+</body>
+</html>
