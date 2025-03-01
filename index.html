@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark">
+  <div class="app">
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="Assets/Untitled design.png" class="ai-icon">
+        <h1>Luna</h1>
+      </div>
+      <div class="header-right">
+        <div class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <label for="theme-toggle" class="switch">
+            <i data-lucide="sun" class="light-icon"></i>
+            <i data-lucide="moon" class="dark-icon"></i>
+          </label>
+        </div>
+        <i data-lucide="user" class="profile-icon"></i>
+        <button class="menu-toggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Profile Edit Modal -->
+    <div class="profile-modal">
+      <div class="profile-content">
+        <div class="modal-header">
+          <h2>Edit Profile</h2>
+          <button class="close-profile">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <form class="profile-form">
+          <div class="profile-image-section">
+            <div class="profile-image-container">
+              <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80" alt="Profile" class="profile-image" id="profile-preview">
+              <label for="profile-upload" class="profile-upload-label">
+                <i data-lucide="camera"></i>
+              </label>
+              <input type="file" id="profile-upload" accept="image/*" hidden>
+            </div>
+            <button type="button" class="preview-btn" id="preview-profile">
+              <i data-lucide="eye"></i>
+              Preview
+            </button>
+          </div>
+          <div class="form-group">
+            <label for="username">
+              <i data-lucide="user"></i>
+              Username
+            </label>
+            <input type="text" id="username" placeholder="Enter username">
+          </div>
+          <div class="form-group">
+            <label for="email">
+              <i data-lucide="mail"></i>
+              Email
+            </label>
+            <input type="email" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="bio">
+              <i data-lucide="file-text"></i>
+              Bio
+            </label>
+            <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+          </div>
+          <div class="social-login">
+            <h3>Connect with</h3>
+            <div class="social-icons">
+              <button type="button" class="social-btn google">
+                <i data-lucide="mail"></i>
+              </button>
+              <button type="button" class="social-btn facebook">
+                <i data-lucide="facebook"></i>
+              </button>
+              <button type="button" class="social-btn github">
+                <i data-lucide="github"></i>
+              </button>
+              <button type="button" class="social-btn linkedin">
+                <i data-lucide="linkedin"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="save-profile">Save Changes</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Profile Preview Modal -->
+    <div class="preview-modal">
+      <div class="preview-content">
+        <button class="close-preview">
+          <i data-lucide="x"></i>
+        </button>
+        <img id="preview-image" src="" alt="Profile Preview">
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="side-nav">
+      <button class="close-nav">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="nav-items">
+        <a href="#" class="nav-item">
+          <i data-lucide="home"></i>
+          <span>Home</span>
+        </a>
+        <a href="index.html" class="nav-item">
+          <i data-lucide="bot"></i>
+          <span>AI Assistant</span>
+        </a>
+        <a href="templates/premium/premium.html" class="nav-item">
+          <i data-lucide="crown"></i>
+          <span>Premium</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i data-lucide="qr-code"></i>
+          <span>QR Code</span>
+        </a>
+        <a href="templates/contact/contact.html" class="nav-item">
+          <i data-lucide="contact"></i>
+          <span>Contact Us</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i data-lucide="settings"></i>
+          <span>Settings</span>
+        </a>
+        <a href="https://opccgoeo.dora.run/" class="nav-item">
+          <i data-lucide="info"></i>
+          <span>About Us</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+      <div class="messages"></div>
+    </div>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <div class="file-upload">
+        <input type="file" id="file-input" accept="image/*" multiple>
+        <label for="file-input">
+          <i data-lucide="upload"></i>
+        </label>
+      </div>
+      <button class="voice-btn">
+        <i data-lucide="mic"></i>
+      </button>
+      <div class="message-input-container">
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <div class="file-preview"></div>
+      </div>
+      <button class="send-btn">
+        <i data-lucide="send"></i>
+      </button>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
